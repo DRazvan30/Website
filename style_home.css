@@ -1,0 +1,197 @@
+﻿*
+
+{
+	padding: 0;
+	
+	box-sizing: border-box;
+
+}
+
+body
+{
+	
+	background-color: #fff;
+	background-size :cover;
+	background-position: center;
+	
+		
+}
+
+a {
+  text-decoration: none;
+  
+}
+
+nav {
+  font-family: monospace;
+  
+}
+
+ul.nav {
+  display: flex;
+}
+
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  
+}
+ul ul {
+    
+    margin-block-start: 0px;
+    margin-block-end: 0px;}
+
+li {
+ 
+  display: block;
+  margin-top:-0px;
+  padding: 1rem;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+  
+}
+  
+li a {
+  color: #000099;
+}
+
+li:hover {
+  background:red;
+  cursor: pointer;
+}
+
+
+
+ul li ul {
+  background: orange;
+  
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-left: 1rem;
+  left: 0;
+  top: 100%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;
+}
+
+ul li:hover > ul.dropdown,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  z-index: 2;
+}
+
+ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+
+
+
+.cls{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding: 0 20px;
+	margin-top: 15px;
+}
+.row
+{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	margin:100px 0 0;
+
+}
+
+.col-1
+{
+	flex-basis:40%;
+	position:relative;
+	margin-left:200px;
+}
+
+.col-1 h2
+{
+	font-size:54px;
+}
+.col-1 h3
+{
+	font-size:30px;
+	color:#707070;
+	font-weight: 100;
+	margin: 20px 0 10px;
+}
+
+.col-1 p
+{
+	font-size:16px;
+	color: #000099;
+	font-weight: 100;
+	margin:30px 0;
+
+}
+
+button.x{
+
+	width:140px;
+	border:0;
+	padding:12px 10px;
+	outline:none;
+	color: #fff;
+	background: linear-gradient(to right, #0099cc,#003366);
+	border-radius: 6px;
+	cursor:pointer;
+}
+
+.col-1::after{
+	content: '';
+	width:10px;
+	height:57%;
+	background:linear-gradient(#0099cc,#003366);
+	position:absolute;
+	left:-40px;
+	top:8px;
+
+}
+
+.col-2{
+	position:relative;
+	flex-basis:60%;
+	display:flex;
+	align-items:center;
+}
+
+.gif{
+	text-align:center;
+	
+}
+
+.social img{
+	height:25px;
+	margin:20px;
+	cursor:pointer;
+
+
+	
+}
+.social{
+	text-align:center;
+	font-family: monospace;
+	}
+
+
+
+
+
+
+
+
